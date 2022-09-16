@@ -1,4 +1,4 @@
-itpackage com.example.contactapp;
+package com.example.contactapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
