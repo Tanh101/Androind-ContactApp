@@ -12,11 +12,12 @@ import java.util.ArrayList;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> {
 
-    public ContactAdapter(ArrayList<String> contactList) {
+    private ArrayList<Contact> contactList;
+
+    public ContactAdapter(ArrayList<Contact> contactList) {
         this.contactList = contactList;
     }
 
-    private ArrayList<String> contactList;
 
 
 
@@ -31,7 +32,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ContactAdapter.ViewHolder holder, int position) {
-        holder.tvName.setText(contactList.get(position));
+        holder.tvName.setText(contactList.get(position).getName());
     }
 
     @Override
